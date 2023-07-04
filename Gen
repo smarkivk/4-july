@@ -1,0 +1,30 @@
+public class Box<T> {
+    private T typeData;
+
+    public void setTypeData(T typeData) {
+        this.typeData = typeData;
+    }
+
+    public T getTypeData() {
+        return typeData;
+    }
+
+    @Override
+    public String toString() {
+        return "Box{" +
+                "typeData=" + typeData +
+                '}';
+    }
+}
+ChatGPT
+The provided code defines a generic class Box<T> that can hold any type of data. It has a private field typeData of type T, which represents the data stored in the box.
+
+The class provides two methods:
+
+setTypeData(T typeData): This method sets the value of the typeData field with the provided argument.
+
+getTypeData(): This method retrieves the value of the typeData field.
+
+Additionally, the class overrides the toString() method to provide a string representation of the Box object, which includes the value of the typeData field.
+
+By using this generic Box class, you can create instances of the Box class and store different types of data in them. The type parameter T can be replaced with any valid Java type when creating an instance of the Box class.
